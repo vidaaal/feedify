@@ -14,7 +14,7 @@ class CreateUserController {
       password,
     });
 
-    response.status(204).json(user);
+    response.status(201).json(user);
   }
 }
 
