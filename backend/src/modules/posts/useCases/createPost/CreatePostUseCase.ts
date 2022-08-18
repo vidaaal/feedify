@@ -1,11 +1,11 @@
-import { CreatePostDTO } from '../dtos/CreatePostDTO';
-import { IPostsRepository } from '../repositories/IPostsRepository';
+import { CreatePostDTO } from '../../dtos/CreatePostDTO';
+import { IPostsRepository } from '../../repositories/IPostsRepository';
 
 class CreatePostUseCase {
   private postsRepository: IPostsRepository;
 
-  constructor(usersRepository: IPostsRepository) {
-    this.postsRepository = usersRepository;
+  constructor(postsRepository: IPostsRepository) {
+    this.postsRepository = postsRepository;
   }
 
   async execute(data: CreatePostDTO) {

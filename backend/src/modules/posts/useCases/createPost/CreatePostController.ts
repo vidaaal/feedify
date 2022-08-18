@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { CreatePostUseCase } from './CreatePostUseCase';
-import { PostsRepository } from '../repositories/implementations/PostsRepository';
+import { PostsRepository } from '../../repositories/implementations/PostsRepository';
 
 class CreatePostController {
   async handle(request: Request, response: Response) {

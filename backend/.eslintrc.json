@@ -33,7 +33,8 @@
     "@typescript-eslint/indent": [
       "error",
       2
-    ]
+    ],
+    "consistent-return": "off"
   },
   "settings": {
     "import/resolver": {
