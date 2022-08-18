@@ -1,8 +1,8 @@
 import bcrypt from 'bcrypt';
 
-import { AppError } from '../../../errors/AppError';
-import { CreateUserDTO } from '../dtos/CreateUserDTO';
-import { IUsersRepository } from '../repositories/IUsersRepository';
+import { AppError } from '../../../../errors/AppError';
+import { CreateUserDTO } from '../../dtos/CreateUserDTO';
+import { IUsersRepository } from '../../repositories/IUsersRepository';
 
 interface IRequest {
 
