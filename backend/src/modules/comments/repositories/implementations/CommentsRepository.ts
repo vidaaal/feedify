@@ -15,6 +15,16 @@ class CommentsRepository implements ICommentsRepository {
 
     return comment;
   }
+
+  async findAllByPostId(post_id: string): Promise<Comment[]> {
+    const comments = await prismaClient.comment.findMany({
+      where: {
+        post_id,
+      },
+    });
+
+    return comments;
+  }
 }
 
 export { CommentsRepository };
