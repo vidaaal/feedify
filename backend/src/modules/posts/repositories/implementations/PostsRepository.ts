@@ -22,6 +22,17 @@ class PostsRepository implements IPostsRepository {
 
     return post;
   }
+
+  async findAllPopulated(): Promise<Post[]> {
+    const posts = await prismaClient.post.findMany({
+      include: {
+        Comments: true,
+        Likes: true,
+      },
+    });
+
+    return posts;
+  }
 }
 
 export { PostsRepository };
